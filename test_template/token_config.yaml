@@ -1,0 +1,6 @@
+filterBlacklist: true
+filterFunctions: [
+]
+#testLimit: 100000
+deployer: "0x17B6c4336528B814e15fE12a7F38dE0141df2e6f"
+sender: ["0x4e252a6A23eA135EAeb433EA0Aeb6aB55E2c505C", "0x17B6c4336528B814e15fE12a7F38dE0141df2e6f"]

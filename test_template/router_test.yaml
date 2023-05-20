@@ -1,0 +1,47 @@
+sender: ["0x4e252a6A23eA135EAeb433EA0Aeb6aB55E2c505C", "0x17B6c4336528B814e15fE12a7F38dE0141df2e6f"]
+
+deployer: "0x17B6c4336528B814e15fE12a7F38dE0141df2e6f"
+
+contractAddr: "0x1111111254fb6c44bAC0beD2854e76F90643097d"
+
+deployContracts: [
+  ["0x4Fabb145d64652a948d72533023f6E7A623C7C53",  "TestTokenA"],
+  ["0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39",  "TestTokenB"],
+  ["0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",  "TestTokenC"],
+  ["0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f", "TestUniswapV2Factory"],
+]
+
+allContracts: true
+
+# seqLen: 1000
+# testLimit: 10000000
+
+solcArgs: "--optimize-runs 200"
+
+filterBlacklist: false 
+filterFunctions: [
+  "TestTokenA.approve(address,uint256)",
+  "TestTokenB.approve(address,uint256)",
+  "TestTokenC.approve(address,uint256)",
+  # "TestTokenA.transfer(address,uint256)",
+  # "TestTokenB.transfer(address,uint256)",
+  # "TestTokenC.transfer(address,uint256)",
+  # "TestUniswapV2Router02.removeLiquidityETHSupportingFeeOnTransferTokens(address,uint256,uint256,uint256,address,uint256)",
+  # "TestUniswapV2Router02.removeLiquidityETHWithPermitSupportingFeeOnTransferTokens(address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+  # "TestUniswapV2Router02.swapExactTokensForTokensSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256)",
+  # "TestUniswapV2Router02.swapExactETHForTokensSupportingFeeOnTransferTokens(uint256,address[],address,uint256)",
+  # "TestUniswapV2Router02.swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256)",
+  # "TestUniswapV2Router02.addLiquidity(address,address,uint256,uint256,uint256,uint256,address,uint256)",
+  # "TestUniswapV2Router02.addLiquidityETH(address,uint256,uint256,uint256,address,uint256)",
+  # "TestUniswapV2Router02.removeLiquidity(address,address,uint256,uint256,uint256,address,uint256)",
+  # "TestUniswapV2Router02.removeLiquidityETH(address,uint256,uint256,uint256,address,uint256)",
+  # "TestUniswapV2Router02.removeLiquidityWithPermit(address,address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+  # "TestUniswapV2Router02.removeLiquidityETHWithPermit(address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+  # "TestUniswapV2Router02.swapExactTokensForTokens(uint256,uint256,address[],address,uint256)",
+  # "TestUniswapV2Router02.swapTokensForExactTokens(uint256,uint256,address[],address,uint256)",
+  # "TestUniswapV2Router02.swapExactETHForTokens(uint256,address[],uint256)",
+  # "TestUniswapV2Router02.swapTokensForExactETH(uint256,address[],uint256)",
+  # "TestUniswapV2Router02.swapExactTokensForETH(uint256,address[],uint256)",
+  # "TestUniswapV2Router02.swapETHForExactTokens(uint256,address[],uint256)",
+  "TestUniswapV2Router02.addLiquidityTest()",
+]
