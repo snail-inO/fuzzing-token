@@ -2,8 +2,8 @@
 ## Description
 This project is for testing ERC20 tokens' reliability using Echidna.
 ## Prerequisites
-- Python
-- Node Js
+- Python - 3.11
+- Node Js - 19.6.1
 ## Usage
 1. Install js dependcy packages `npm install`
 2. Install python depency packages `pip install py-solc-x python-dotenv-vault`
@@ -13,18 +13,18 @@ This project is for testing ERC20 tokens' reliability using Echidna.
 ## Output
 All the test results are stored in `tests/token/result/` directory seperately for each token.  
 Each path is presented in the form of the following example:  
-``
-[
-    contract.func1(params...),
-    contract.func2(params...),
+
+    [
+        contract.func1(params...),
+        contract.func2(params...),
+        ...
+        contract.funcN(params...)
+    ]
     ...
-    contract.funcN(params...)
-]
-...
-[
-    another path
-]
-``
+    [
+        another path
+    ]
+
 
 ## Limitations
 - Do not support solidity version older thant 0.4.25 (limited by Echidna)
