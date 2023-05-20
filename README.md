@@ -28,4 +28,5 @@ Each path is presented in the form of the following example:
 
 ## Limitations
 - Do not support solidity version older thant 0.4.25 (limited by Echidna)
-- 
+- Possible not able to find out all possible paths due to fuzzer's characteristics
+- Poor performance when handling large complex smart contracts
